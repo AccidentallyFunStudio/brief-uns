@@ -5,7 +5,7 @@ import { BriefFormData, GeneratedBrief } from "../types";
 // where 'process' might not be defined.
 const apiKey = typeof process !== 'undefined' ? process.env.API_KEY : '';
 
-const ai = new GoogleGenAI({ apiKey: apiKey || 'dummy-key-for-build' });
+const ai = new GoogleGenAI({ apiKey: apiKey || 'AIzaSyBHUZUz7ErHIxpCNLAtDDdlTYZMskkp8AE' });
 
 export const generateCreativeBrief = async (data: BriefFormData): Promise<GeneratedBrief> => {
   const modelId = "gemini-3-flash-preview";
